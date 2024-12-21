@@ -29,8 +29,13 @@ const ChipTabs = () => {
       {/* Logo */}
       <img
         src="/Ajitvermalogo.png"
-        className="w-16 h-10 object-contain"
+        className="w-16 h-10 object-contain cursor-pointer"
         alt="Logo"
+        onClick={() =>
+          document
+            .getElementById("home")
+            ?.scrollIntoView({ behavior: "smooth" })
+        }
       />
 
       {/* Mobile Menu Button */}
