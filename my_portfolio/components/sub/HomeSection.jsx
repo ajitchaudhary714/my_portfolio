@@ -43,7 +43,7 @@ const HomePage = () => {
           />
         </motion.div>
         <motion.h1 className="mt-6 text-5xl font-bold" variants={itemVariants}>
-          Jane Doe
+          Ajit Verma
         </motion.h1>
         <motion.p
           className="mt-4 text-xl text-gray-300 dark:text-gray-300"
