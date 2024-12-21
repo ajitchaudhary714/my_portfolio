@@ -52,7 +52,7 @@ const itemVariants = {
 export default function ProjectsSection() {
   return (
     <div className=" bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8  md:px-16 py-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8  md:px-16 py-20">
         <motion.h1
           className="text-4xl font-bold mb-12 text-center"
           initial={{ opacity: 0, y: -20 }}
