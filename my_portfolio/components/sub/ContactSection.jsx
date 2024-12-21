@@ -14,7 +14,7 @@ const ContactSection = () => {
       <div className="relative max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold bg-gradient-to-r from-purple-300 via-purple-200 to-purple-300 bg-clip-text text-transparent mb-6">
+          <h2 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-purple-300 via-purple-200 to-purple-300 bg-clip-text text-transparent mb-6">
             Let's Connect
           </h2>
           <div className="h-1 w-20 bg-gradient-to-r from-purple-500 to-purple-300 mx-auto mb-6" />
