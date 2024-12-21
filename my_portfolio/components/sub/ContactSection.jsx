@@ -51,13 +51,7 @@ const ContactSection = () => {
                 <h3 className="font-semibold text-xl mb-1 text-purple-300">
                   Address
                 </h3>
-                <p className="text-gray-300">
-                  123 Professional Street
-                  <br />
-                  Business City, State 12345
-                  <br />
-                  United States
-                </p>
+                <p className="text-gray-300">Lucknow , Uttar Pradesh , India</p>
               </div>
             </motion.div>
 
