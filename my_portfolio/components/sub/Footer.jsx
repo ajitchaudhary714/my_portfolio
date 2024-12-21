@@ -55,7 +55,7 @@ const Footer = () => {
             </p>
             {/* Quick Links */}
 
-            <div className="text-center md:text-left mb-4 md:mb-0">
+            <div className=" text-left mb-4 md:mb-0">
               <p className="text-sm">
                 © {currentYear} Ajit Verma. All Rights Reserved.
               </p>

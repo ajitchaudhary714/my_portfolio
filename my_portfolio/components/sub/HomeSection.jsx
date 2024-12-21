@@ -16,13 +16,8 @@ const HomePage = () => {
   ];
 
   const experience = [
-    {
-      year: "2023",
-      role: "Senior Frontend Developer",
-      company: "Tech Innovators Inc.",
-    },
-    { year: "2021", role: "Frontend Developer", company: "Web Solutions Ltd." },
-    { year: "2019", role: "Junior Developer", company: "StartUp Crew" },
+    { year: "2024", role: "Frontend Developer", company: "Web Solutions Ltd." },
+    { year: "2022", role: "Junior Developer", company: "StartUp Crew" },
   ];
 
   const interests = [
@@ -52,31 +47,31 @@ const HomePage = () => {
             <img
               src="/ajit.jpg"
               alt="Developer's portrait"
-              className="rounded-full border-4 border-blue-500 object-cover w-full h-full"
+              className=" border-4 border-blue-500 object-cover w-full h-full"
             />
             <div className="absolute inset-0 rounded-full bg-blue-500/10 animate-pulse" />
           </div>
 
-          <h1 className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+          <h1 className="text-3xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
             Ajit Verma
           </h1>
 
-          <p className="text-2xl text-slate-300">
+          <p className="text-xl md:text-2xl text-slate-300">
             Frontend Developer & UI/UX Enthusiast
           </p>
 
-          <p className="max-w-2xl mx-auto text-slate-400 text-lg">
+          <p className="max-w-2xl mx-auto text-slate-400 md:text-lg">
             Passionate about creating beautiful, responsive, and user-friendly
-            web applications. With 5 years of experience, I bring ideas to life
+            web applications. With 2 years of experience, I bring ideas to life
             through code and creativity.
           </p>
         </div>
       </section>
 
       {/* Skills Section */}
-      <section className="bg-slate-900/50 backdrop-blur-sm py-24">
+      <section className="bg-slate-900/50 backdrop-blur-sm py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
             My Toolbox
           </h2>
 
@@ -101,24 +96,26 @@ const HomePage = () => {
 
       {/* Experience Timeline */}
       <section className="container mx-auto px-4 py-24">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+        <h2 className="text-2xl md:text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
           My Journey
         </h2>
 
-        <div className="space-y-12">
+        <div className="space-y-12 flex flex-col justify-center items-center ">
           {experience.map((job, index) => (
             <div key={index} className="flex items-center space-x-6">
-              <div className="flex-shrink-0 w-32 text-right font-bold text-blue-400">
+              <div className="flex-shrink-0  text-right font-bold text-blue-400">
                 {job.year}
               </div>
               <div className="w-4 h-4 rounded-full bg-blue-500 relative">
                 <div className="absolute inset-0 bg-blue-500/50 rounded-full animate-ping" />
               </div>
               <div className="flex-grow">
-                <h3 className="font-semibold text-xl text-slate-200">
+                <h3 className="font-semibold whitespace-nowrap text-lg md:text-xl text-slate-200">
                   {job.role}
                 </h3>
-                <p className="text-slate-400">{job.company}</p>
+                <p className="text-slate-400 text-sm md:text-base">
+                  {job.company}
+                </p>
               </div>
             </div>
           ))}
@@ -128,7 +125,7 @@ const HomePage = () => {
       {/* Interests Section */}
       <section className="bg-gradient-to-b from-black via-purple-950 to-black backdrop-blur-sm py-24">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
             When I'm Not Coding
           </h2>
 
@@ -146,7 +143,7 @@ const HomePage = () => {
                     size={40}
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-slate-200 mb-3">
+                <h3 className="text-lg md:text-xl font-semibold text-slate-200 mb-3">
                   {interest.title}
                 </h3>
                 <p className="text-slate-400">{interest.description}</p>

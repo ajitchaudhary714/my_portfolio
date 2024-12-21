@@ -30,10 +30,10 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <div className="bg-gradient-to-b from-black via-purple-950 to-black  py-24 px-4">
+    <div className="bg-gradient-to-b from-black via-purple-950 to-black  py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+          <h1 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
             Featured Projects
           </h1>
           <p className="mt-4 text-slate-400 max-w-2xl mx-auto">
