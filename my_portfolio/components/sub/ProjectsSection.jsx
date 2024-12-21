@@ -9,21 +9,21 @@ const projects = [
     title: "E-commerce Website",
     description:
       "A fully responsive e-commerce site built with Next.js and Tailwind CSS",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/projext1.png",
   },
   {
     id: 2,
     title: "Task Management App",
     description:
       "A React-based task management application with drag-and-drop functionality",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/image.png",
   },
   {
     id: 3,
     title: "Portfolio Website",
     description:
       "A customizable portfolio template built with Next.js and Tailwind CSS",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/conqt.png",
   },
 ];
 
@@ -52,7 +52,7 @@ const itemVariants = {
 export default function ProjectsSection() {
   return (
     <div className=" bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-10 py-10">
+      <div className="max-w-7xl mx-auto px-4 py-10">
         <motion.h1
           className="text-4xl font-bold mb-12 text-center"
           initial={{ opacity: 0, y: -20 }}

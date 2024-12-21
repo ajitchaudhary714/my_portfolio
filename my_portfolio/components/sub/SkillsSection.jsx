@@ -54,7 +54,7 @@ export default function Skills() {
           </div>
         </section>
 
-        <section className="bg-gray-800 rounded-lg p-8 shadow-lg">
+        <section className="bg-gray-800 rounded-lg max-w-4xl mx-auto p-8 shadow-lg">
           <h2 className="text-4xl font-bold mb-8 text-center">
             Skill Proficiency
           </h2>

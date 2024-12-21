@@ -25,10 +25,10 @@ const HomePage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 dark:text-white transition-colors duration-300">
+    <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 dark:text-white transition-colors duration-300 max-w-7xl mx-auto ">
       {/* Hero Section */}
       <motion.section
-        className="container mx-auto px-4 pt-20 text-center"
+        className="container mx-auto px-4 py-20 text-center"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
@@ -62,7 +62,7 @@ const HomePage = () => {
       </motion.section>
 
       {/* Skills Section */}
-      <section className="bg-gray-900 dark:bg-gray-800 py-20 transition-colors duration-300">
+      <section className="bg-gray-900 dark:bg-gray-800 py-16 transition-colors duration-300">
         <div className="container mx-auto px-4">
           <motion.h2
             className="text-3xl font-bold text-center mb-12 text-gray-100 dark:text-gray-300"
