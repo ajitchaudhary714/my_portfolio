@@ -51,7 +51,7 @@ export default function Home() {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYAjfPaRcWF_p5MEEyHMs9g8WDrfOQ8v9HHw&s" // Add a dashboard mockup to the public folder.
               alt="Dashboard"
-              className="   object-fill h-80 max-w-[500px] rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+              className="   object-fill h-80 md:max-w-[500px] rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
             />
           </div>
           <div>
@@ -64,19 +64,22 @@ export default function Home() {
       </header>
 
       {/* Features Section */}
-      <section className="py-20 px-5 max-w-7xl mx-auto sm:px-10 md:px-16">
-        <h2 className="text-center text-3xl font-bold mb-8">
+      <section className="pb-20 px-5 max-w-5xl mx-auto sm:px-10 md:px-16">
+        <h2 className="text-center text-3xl font-bold mb-12">
           Features you must know about
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-[#0e3a15] p-6 rounded-lg shadow hover:bg-[#1a5c29] transition duration-200"
+              className="bg-[#0e3a15] flex items-center space-x-4 p-4 rounded-lg shadow hover:bg-[#1a5c29] transition duration-200"
             >
               <div className="text-3xl">{feature.icon}</div>
-              <h3 className="mt-4 text-xl font-semibold">{feature.title}</h3>
-              <p className="mt-2 text-sm">{feature.description}</p>
+              <div>
+                {" "}
+                <h3 className="mt-4 text-xl font-semibold">{feature.title}</h3>
+                <p className="mt-2 text-sm">{feature.description}</p>
+              </div>
             </div>
           ))}
         </div>
