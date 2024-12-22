@@ -44,9 +44,9 @@ export default function Testimonials() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   return (
-    <div className="min-h-screen bg-black text-white py-16">
+    <div className=" bg-black text-white py-16">
       {/* Clients Section */}
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto  max-w-7xl px-6 sm:px-10 md:px-16">
         <h2 className="text-2xl font-bold text-center mb-12">Our Clients</h2>
         <div className="grid grid-cols-4 md:grid-cols-8 gap-8 items-center justify-items-center mb-24">
           {clients.map((client) => (
@@ -66,13 +66,13 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Section */}
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto px-6 sm:px-10 md:px-16">
           <h2 className="text-2xl font-bold text-center mb-12">
             What Our Clients Say About Us
           </h2>
 
           <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={testimonial.id}

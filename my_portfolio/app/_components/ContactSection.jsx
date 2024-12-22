@@ -4,14 +4,14 @@ import { Card, CardContent } from "@/components/ui/Card";
 
 const ContactSection = () => {
   return (
-    <section className="relative py-20 px-4 overflow-hidden bg-gradient-to-b from-black via-purple-950 to-black">
+    <section className="relative py-20  overflow-hidden bg-gradient-to-b from-black via-purple-950 to-black">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -left-40 -top-40 h-80 w-80 rounded-full bg-purple-600/10 blur-3xl" />
         <div className="absolute -right-40 -bottom-40 h-80 w-80 rounded-full bg-purple-600/10 blur-3xl" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto">
+      <div className="relative max-w-6xl mx-auto px-6 sm:px-10 md:px-16 ">
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-purple-300 via-purple-200 to-purple-300 bg-clip-text text-transparent mb-6">

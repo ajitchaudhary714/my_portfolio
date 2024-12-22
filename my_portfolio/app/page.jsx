@@ -1,11 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import HomeSection from "../components/sub/HomeSection";
-import SkillsSection from "../components/sub/SkillsSection";
-import ProjectsSection from "../components/sub/ProjectsSection";
-import ContactSection from "../components/sub/ContactSection";
-import Footer from "@/components/sub/Footer";
+import HomeSection from "./_components/HomeSection";
+import SkillsSection from "./_components/SkillsSection";
+import ProjectsSection from "./_components/ProjectsSection";
+import ContactSection from "./_components/ContactSection";
+import Footer from "@/app/_components/Footer";
 
 const navItems = [
   { label: "Home", section: "home" },
@@ -25,7 +25,7 @@ const ChipTabs = () => {
   };
 
   return (
-    <div className="flex justify-between items-center px-4 py-2 fixed left-0 right-0 bg-slate-900 max-w-7xl mx-auto z-50">
+    <div className="flex justify-between items-center px-4 py-2 fixed left-0 right-0 bg-slate-900  z-50">
       {/* Logo */}
       <img
         src="/Ajitvermalogo.png"

@@ -47,7 +47,7 @@ const HomePage = () => {
             <img
               src="/ajit.jpg"
               alt="Developer's portrait"
-              className=" border-4 border-blue-500 object-cover w-full h-full"
+              className=" border-4 rounded-full border-blue-500 object-cover w-full h-full"
             />
             <div className="absolute inset-0 rounded-full bg-blue-500/10 animate-pulse" />
           </div>
@@ -69,8 +69,8 @@ const HomePage = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="bg-slate-900/50 backdrop-blur-sm py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-slate-900/50 backdrop-blur-sm py-20 ">
+        <div className="container  max-w-6xl mx-auto px-6 sm:px-10 md:px-16">
           <h2 className="text-2xl md:text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
             My Toolbox
           </h2>
@@ -95,8 +95,8 @@ const HomePage = () => {
       </section>
 
       {/* Experience Timeline */}
-      <section className="container mx-auto px-4 py-24">
-        <h2 className="text-2xl md:text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+      <section className="   py-24">
+        <h2 className="text-2xl md:text-4xl  max-w-6xl mx-auto px-6 sm:px-10 md:px-16  font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
           My Journey
         </h2>
 
@@ -124,7 +124,7 @@ const HomePage = () => {
 
       {/* Interests Section */}
       <section className="bg-gradient-to-b from-black via-purple-950 to-black backdrop-blur-sm py-24">
-        <div className="container mx-auto px-4">
+        <div className="container max-w-6xl mx-auto px-6 sm:px-10 md:px-16 ">
           <h2 className="text-2xl md:text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
             When I'm Not Coding
           </h2>

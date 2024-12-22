@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from "next/navigation";
 import { Card, CardContent } from "@/components/ui/CardProject";
 
 const projects = [
@@ -7,8 +8,9 @@ const projects = [
     title: "E-commerce Website",
     description:
       "A fully responsive e-commerce site built with Next.js and Tailwind CSS",
-    image: "/projext1.png",
+    image: "/image3.png",
     tags: ["Next.js", "Tailwind CSS", "E-commerce"],
+    path: "/landing-page", // Add unique paths
   },
   {
     id: 2,
@@ -17,6 +19,7 @@ const projects = [
       "A React-based task management application with drag-and-drop functionality",
     image: "/image.png",
     tags: ["React", "DnD", "UI/UX"],
+    path: "/projects/task-management-app",
   },
   {
     id: 3,
@@ -25,12 +28,19 @@ const projects = [
       "A customizable portfolio template built with Next.js and Tailwind CSS",
     image: "/conqt.png",
     tags: ["Next.js", "Portfolio", "Responsive"],
+    path: "/projects/portfolio-website",
   },
 ];
 
 const ProjectsSection = () => {
+  const router = useRouter();
+
+  const handleCardClick = (path) => {
+    router.push(path); // Navigate to the specific project page
+  };
+
   return (
-    <div className="bg-gradient-to-b from-black via-purple-950 to-black  py-20 px-6">
+    <div className="bg-gradient-to-b from-black via-purple-950 to-black py-20 px-6 sm:px-10 md:px-16">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
@@ -46,7 +56,8 @@ const ProjectsSection = () => {
           {projects.map((project) => (
             <Card
               key={project.id}
-              className="group bg-slate-900/50 border-slate-800 hover:border-slate-700 backdrop-blur-sm transition-all duration-300 overflow-hidden"
+              className="group bg-slate-900/50 border-slate-800 hover:border-slate-700 backdrop-blur-sm transition-all duration-300 overflow-hidden cursor-pointer"
+              onClick={() => handleCardClick(project.path)} // Add onClick handler
             >
               <div className="relative aspect-video overflow-hidden">
                 <img

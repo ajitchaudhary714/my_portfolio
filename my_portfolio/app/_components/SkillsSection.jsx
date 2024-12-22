@@ -157,7 +157,7 @@ const SkillBar = ({ skill, index }) => (
 export default function Skills() {
   return (
     <div className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white py-20">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 space-y-20">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-16 space-y-20">
         <section className="space-y-8">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}

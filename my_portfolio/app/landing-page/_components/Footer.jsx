@@ -1,68 +1,81 @@
-"use client";
+import Link from "next/link";
+import { Github, Twitter, Facebook, Instagram, Linkedin } from "lucide-react";
 
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
-
-export default function Page() {
+const Footer = () => {
   return (
-    <div className=" bg-gradient-to-b from-black to-gray-900">
-      {/* CTA Section */}
-      <section className="flex flex-col items-center justify-center py-20 text-white">
+    <>
+      <section className="flex bg-black  flex-col items-center justify-center pb-20 text-white">
         <h1 className="mb-8 text-3xl font-bold text-center">
           Start Your Free Trial Today
         </h1>
-        <button className="bg-green-600 hover:bg-green-700 text-white  py-2 rounded-lg px-8">
+        <button className="bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg px-8">
           Register
         </button>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-green-800/80 text-white/90 py-8">
-        <div className="container mx-auto px-4">
-          {/* Social Icons */}
-          <div className="flex justify-center space-x-6 mb-6">
-            <a href="#" className="hover:text-white">
-              <Facebook className="h-5 w-5" />
-              <span className="sr-only">Facebook</span>
-            </a>
-            <a href="#" className="hover:text-white">
-              <Twitter className="h-5 w-5" />
-              <span className="sr-only">Twitter</span>
-            </a>
-            <a href="#" className="hover:text-white">
-              <Instagram className="h-5 w-5" />
-              <span className="sr-only">Instagram</span>
-            </a>
-            <a href="#" className="hover:text-white">
-              <Linkedin className="h-5 w-5" />
-              <span className="sr-only">LinkedIn</span>
-            </a>
+      <footer className="bg-green-600 text-white">
+        <div className="max-w-7xl mx-auto px-4 py-6 sm:px-10 md:px-16 flex flex-col md:flex-row justify-between items-center">
+          {/* Socials Section */}
+          <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+            <p className="text-lg font-medium">Socials</p>
+            <div className="flex space-x-4">
+              <Link
+                href="#"
+                className="hover:text-gray-200 text-xl"
+                aria-label="Facebook"
+              >
+                <Facebook />
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-gray-200 text-xl"
+                aria-label="Twitter"
+              >
+                <Twitter />
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-gray-200 text-xl"
+                aria-label="Instagram"
+              >
+                <Instagram />
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-gray-200 text-xl"
+                aria-label="Linkedin"
+              >
+                <Linkedin />
+              </Link>
+            </div>
           </div>
 
-          {/* Navigation Links */}
-          <nav className="flex justify-center space-x-8 mb-6">
-            <a href="#" className="hover:text-white">
+          {/* Links Section */}
+          <div className="flex space-x-6 text-sm">
+            <Link href="/about" className="hover:text-gray-200">
               About
-            </a>
-            <a href="#" className="hover:text-white">
+            </Link>
+            <Link href="/terms" className="hover:text-gray-200">
               Terms
-            </a>
-            <a href="#" className="hover:text-white">
+            </Link>
+            <Link href="/privacy" className="hover:text-gray-200">
               Privacy
-            </a>
-            <a href="#" className="hover:text-white">
+            </Link>
+            <Link href="/features" className="hover:text-gray-200">
               Features
-            </a>
-            <a href="#" className="hover:text-white">
+            </Link>
+            <Link href="/contact" className="hover:text-gray-200">
               Contact
-            </a>
-          </nav>
-
-          {/* Copyright */}
-          <div className="text-center text-sm">
-            © {new Date().getFullYear()} CloudWings.com Inc.
+            </Link>
           </div>
         </div>
+
+        {/* Bottom Section */}
+        <div className="border-t border-green-700 text-center py-4 text-xs text-gray-300">
+          &copy; 2024 CloudWorks.com, Inc.
+        </div>
       </footer>
-    </div>
+    </>
   );
-}
+};
+
+export default Footer;

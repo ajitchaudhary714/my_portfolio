@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="bg-gradient-to-b from-[#092b12] to-[#14421d]  min-h-screen text-white">
-      <div className="container mx-auto py-12 px-6">
+      <div className="container mx-auto py-20 px-6">
         {/* Header */}
         <h1 className="text-center text-3xl md:text-4xl font-bold mb-12">
           How CloudWorks Makes Project Management Easy

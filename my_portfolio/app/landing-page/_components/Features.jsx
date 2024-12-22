@@ -46,12 +46,12 @@ export default function Home() {
           Everything You Need to Manage Your Projects
         </h1>
 
-        <div className="grid md:grid-cols-2 items-center md:px-56 py-16 gap-10">
+        <div className="grid md:grid-cols-2 items-center md:px-44 py-16 gap-10">
           <div className="">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYAjfPaRcWF_p5MEEyHMs9g8WDrfOQ8v9HHw&s" // Add a dashboard mockup to the public folder.
               alt="Dashboard"
-              className=" mx-auto   rounded-2xl shadow-lg"
+              className="   object-fill h-80 max-w-[500px] rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
             />
           </div>
           <div>
@@ -64,7 +64,7 @@ export default function Home() {
       </header>
 
       {/* Features Section */}
-      <section className="py-10 px-5">
+      <section className="py-20 px-5 max-w-7xl mx-auto sm:px-10 md:px-16">
         <h2 className="text-center text-3xl font-bold mb-8">
           Features you must know about
         </h2>

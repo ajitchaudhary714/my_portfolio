@@ -1,7 +1,7 @@
 export default function Pricing() {
   return (
     <div className="bg-gradient-to-b from-gray-900 to-gray-800 min-h-screen text-white py-12">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto max-w-7xl px-6 sm:px-10 md:px-16 py-10">
         {/* Header */}
         <h1 className="text-center text-3xl md:text-4xl font-bold mb-12">
           Pricing
