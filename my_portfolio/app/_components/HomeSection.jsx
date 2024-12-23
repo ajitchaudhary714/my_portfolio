@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Heart, Code, Briefcase, Mail, ArrowRight } from "lucide-react";
-
+import Link from "next/link";
+import Hero from "../../components/ui/Hero";
 const HomePage = () => {
   const [hoveredCard, setHoveredCard] = useState("");
 
@@ -41,6 +42,7 @@ const HomePage = () => {
   return (
     <div className="bg-gradient-to-b from-black via-purple-950 to-black text-white min-h-screen">
       {/* Hero Section */}
+      {/* <Hero /> */}
       <section className="container mx-auto px-4 py-24 text-center">
         <div className="space-y-6">
           <div className="relative w-80 h-80 mx-auto">
