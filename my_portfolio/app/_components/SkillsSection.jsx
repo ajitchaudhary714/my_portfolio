@@ -173,7 +173,7 @@ export default function Skills() {
           </div>
         </section>
 
-        <section className="relative">
+        {/* <section className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-800 to-pink-800 opacity-10 blur-3xl"></div>
           <div className="relative bg-gray-800/50 rounded-2xl backdrop-blur-sm p-8 max-w-4xl mx-auto">
             <motion.h2
@@ -189,7 +189,7 @@ export default function Skills() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

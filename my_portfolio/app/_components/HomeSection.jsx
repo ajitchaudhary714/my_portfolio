@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Heart, Code, Briefcase, Mail, ArrowRight } from "lucide-react";
-import Link from "next/link";
-import Hero from "../../components/ui/Hero";
+
 const HomePage = () => {
   const [hoveredCard, setHoveredCard] = useState("");
 
@@ -40,10 +39,8 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-black via-purple-950 to-black text-white min-h-screen">
-      {/* Hero Section */}
-      {/* <Hero /> */}
-      <section className="container mx-auto px-4 py-24 text-center">
+    <div className="bg-gradient-to-b  from-black via-purple-950 to-black text-white min-h-screen">
+      {/* <section className="container mx-auto px-4 py-24 text-center">
         <div className="space-y-6">
           <div className="relative w-80 h-80 mx-auto">
             <img
@@ -68,7 +65,46 @@ const HomePage = () => {
             through code and creativity.
           </p>
         </div>
-      </section>
+      </section> */}
+      <div className="relative  bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <svg
+              className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+              fill="currentColor"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+            >
+              <polygon points="50,0 100,0 50,100 0,100" />
+            </svg>
+
+            <main className="mt-10 mx-auto pt-12 md:pt-0 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-40">
+              <div className="text-center lg:text-left">
+                <h1 className="text-3xl tracking-wide  font-extrabold text-gray-900 sm:text-5xl ">
+                  <span className="block ">Hi there,</span>{" "}
+                  <span className="block xl:inline">I am Ajit Verma</span>{" "}
+                  <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-purple-600">
+                    Frontend Developer & UI/UX Enthusiast
+                  </span>
+                </h1>
+                <p className="mt-6  text-xl tracking-wide text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-12 md:text-xl lg:mx-0">
+                  Passionate about creating beautiful, responsive, and
+                  user-friendly web applications. With 2 years of experience, I
+                  bring ideas to life through code and creativity.
+                </p>
+              </div>
+            </main>
+          </div>
+        </div>
+        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <img
+            className="w-full object-cover h-auto sm:h-72 md:h-96 lg:w-full lg:h-full"
+            src="/ajit2.jpg"
+            alt=""
+          />
+        </div>
+      </div>
 
       {/* Skills Section */}
       <section className="bg-slate-900/50 backdrop-blur-sm py-20 ">
