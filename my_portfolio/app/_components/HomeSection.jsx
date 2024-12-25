@@ -39,10 +39,10 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b  from-black via-purple-950 to-black text-white min-h-screen">
+    <div className="bg-gradient-to-b  from-black via-purple-950 to-black text-white ">
       <div className="relative  bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+          <div className="relative z-10 pb-8 bg-white sm:pb-12 md:pb-16 lg:max-w-2xl lg:w-full lg:pb-20 xl:pb-24">
             <svg
               className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
               fill="currentColor"
@@ -53,7 +53,7 @@ const HomePage = () => {
               <polygon points="50,0 100,0 50,100 0,100" />
             </svg>
 
-            <main className="mt-6 mx-auto pt-12 md:pt-0 max-w-6xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-40">
+            <main className="mt-6 mx-auto pt-12 md:pt-0 max-w-6xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-32">
               <div className="text-center lg:text-left">
                 <h1 className="text-3xl tracking-wide  font-extrabold text-gray-900 sm:text-5xl ">
                   <span className="block ">Hi there,</span>{" "}
@@ -73,7 +73,7 @@ const HomePage = () => {
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
-            className="w-full object-cover h-auto sm:h-72 md:h-96 lg:w-full lg:h-full"
+            className="w-full object-cover h-96 sm:h-72 md:h-96 lg:w-full lg:h-full"
             src="/vermaji.jpg"
             alt=""
           />

@@ -207,8 +207,8 @@ function ContactSection() {
               <div className="max-w-md mx-auto  sm:max-w-3xl sm:px-6 lg:max-w-none ">
                 <div className="aspect-w-10  aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:py-10 lg:aspect-w-1">
                   <img
-                    className="object-contain rounded-t-3xl md:rounded-3xl shadow-2xl"
-                    src="/verma.jpg"
+                    className="object-cover h-96 w-full md:h-96 rounded-t-3xl md:rounded-3xl shadow-2xl"
+                    src="/vermaji.jpg"
                     alt=""
                   />
                 </div>
@@ -299,7 +299,7 @@ function ContactSection() {
                     </h2>
                   </div>
                   {/* Contact Information */}
-                  <div className="space-y-6   text-center md:text-left">
+                  <div className="space-y-6  text-center md:text-left">
                     <div className="flex items-center gap-4">
                       <Phone className="w-6 h-6" />
                       <span className="text-lg">+91 9026029479</span>
