@@ -40,32 +40,6 @@ const HomePage = () => {
 
   return (
     <div className="bg-gradient-to-b  from-black via-purple-950 to-black text-white min-h-screen">
-      {/* <section className="container mx-auto px-4 py-24 text-center">
-        <div className="space-y-6">
-          <div className="relative w-80 h-80 mx-auto">
-            <img
-              src="/ajit.jpg"
-              alt="Developer's portrait"
-              className=" border-4 rounded-full border-blue-500 object-cover w-full h-full"
-            />
-            <div className="absolute inset-0 rounded-full bg-blue-500/10 animate-pulse" />
-          </div>
-
-          <h1 className="text-3xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
-            Ajit Verma
-          </h1>
-
-          <p className="text-xl md:text-2xl text-slate-300">
-            Frontend Developer & UI/UX Enthusiast
-          </p>
-
-          <p className="max-w-2xl mx-auto text-slate-400 md:text-lg">
-            Passionate about creating beautiful, responsive, and user-friendly
-            web applications. With 2 years of experience, I bring ideas to life
-            through code and creativity.
-          </p>
-        </div>
-      </section> */}
       <div className="relative  bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -79,7 +53,7 @@ const HomePage = () => {
               <polygon points="50,0 100,0 50,100 0,100" />
             </svg>
 
-            <main className="mt-10 mx-auto pt-12 md:pt-0 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-40">
+            <main className="mt-6 mx-auto pt-12 md:pt-0 max-w-6xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-40">
               <div className="text-center lg:text-left">
                 <h1 className="text-3xl tracking-wide  font-extrabold text-gray-900 sm:text-5xl ">
                   <span className="block ">Hi there,</span>{" "}
@@ -88,7 +62,7 @@ const HomePage = () => {
                     Frontend Developer & UI/UX Enthusiast
                   </span>
                 </h1>
-                <p className="mt-6  text-xl tracking-wide text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-12 md:text-xl lg:mx-0">
+                <p className="mt-4  text-xl tracking-wide text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-12 md:text-xl lg:mx-0">
                   Passionate about creating beautiful, responsive, and
                   user-friendly web applications. With 2 years of experience, I
                   bring ideas to life through code and creativity.
@@ -100,7 +74,7 @@ const HomePage = () => {
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="w-full object-cover h-auto sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="/ajit2.jpg"
+            src="/vermaji.jpg"
             alt=""
           />
         </div>

@@ -25,74 +25,76 @@ const ChipTabs = () => {
   };
 
   return (
-    <div className="flex justify-between items-center px-4 py-2 fixed left-0 right-0 bg-slate-900  z-50">
+    <div className="items-center  py-2 fixed left-0 right-0 bg-slate-900  z-50">
       {/* Logo */}
-      <img
-        src="/Ajitvermalogo.png"
-        className="w-16 h-10 object-contain cursor-pointer"
-        alt="Logo"
-        onClick={() =>
-          document
-            .getElementById("home")
-            ?.scrollIntoView({ behavior: "smooth" })
-        }
-      />
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-8">
+        <img
+          src="/Ajitvermalogo.png"
+          className="w-16 h-10 object-contain cursor-pointer"
+          alt="Logo"
+          onClick={() =>
+            document
+              .getElementById("home")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        />
 
-      {/* Mobile Menu Button */}
-      <button
-        className="text-white md:hidden"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-        aria-label="Toggle navigation"
-      >
-        {isMenuOpen ? (
-          // Cross Icon
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        ) : (
-          // Hamburger Icon
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 5.75h16.5M3.75 12h16.5M3.75 18.25h16.5"
-            />
-          </svg>
-        )}
-      </button>
+        {/* Mobile Menu Button */}
+        <button
+          className="text-white md:hidden"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle navigation"
+        >
+          {isMenuOpen ? (
+            // Cross Icon
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            // Hamburger Icon
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 5.75h16.5M3.75 12h16.5M3.75 18.25h16.5"
+              />
+            </svg>
+          )}
+        </button>
 
-      {/* Navigation Menu */}
-      <div
-        className={`${
-          isMenuOpen ? "flex" : "hidden"
-        } flex-col absolute top-full left-0 right-0 bg-slate-900 z-50 md:static md:flex md:flex-row md:items-center md:gap-4 transition-all duration-300`}
-      >
-        {navItems.map((item) => (
-          <Chip
-            key={item.section}
-            text={item.label}
-            selected={selected === item.section}
-            onClick={() => handleNavigation(item.section)}
-          />
-        ))}
+        {/* Navigation Menu */}
+        <div
+          className={`${
+            isMenuOpen ? "flex" : "hidden"
+          } flex-col absolute top-full left-0 right-0 bg-slate-900 z-50 md:static md:flex md:flex-row md:items-center md:gap-4 transition-all duration-300`}
+        >
+          {navItems.map((item) => (
+            <Chip
+              key={item.section}
+              text={item.label}
+              selected={selected === item.section}
+              onClick={() => handleNavigation(item.section)}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
